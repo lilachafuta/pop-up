@@ -225,3 +225,34 @@ form .exit-button {
     height: 20px;
     color: #16254f;
 }
+
+.fb {
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    padding: 0 5px 0 20px;
+    background: #3A5A97;
+    color: #fff;
+    text-shadow: 0 -1px 0 rgba(0,0,20,.4);
+    border-radius: 5px;
+    height: 35px;
+    margin-bottom: 10px;
+}
+
+.connect::after {
+    font-family: 'FontAwesome', sans-serif;
+    content: "\f082";
+    font-size: 25px;
+    display: inline-block;
+    color: white;
+    width: 10px;
+    padding: 0 5px 0 0;
+
+}
+
+.name-login {
+    font-weight: 500;
+    color: #2b2e8f;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
