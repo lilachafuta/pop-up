@@ -126,8 +126,13 @@
                         <input id="files" style="visibility:hidden;" type="file">
                     </div>
                     <!-- Facebook Login -->
-                    <button id="login" class="fb connect">התחבר</button>
-                    <div class="name-login" id="status"></div>
+                    <div class="client-name">
+                        <button id="login" class="fb connect">התחבר</button>
+                        <label for="name"></label>
+                        <input type="name" class="name-input form-control" id="name"
+                               aria-describedby="emailHelp" placeholder="שם מלא">
+                        <div class="name-login" id="status"></div>
+                    </div>
                     <div class="approve-terms form-group form-check">
                         <input type="checkbox" required title="dsdsd" class="form-check-input" id="exampleCheck1">
                         <label id="cat-item" class="approveTermsLabel">

@@ -1,14 +1,11 @@
 $(document).ready(function(){
-
     // add event listener on the login button
-
     $("#login").click(function(){
 
         facebookLogin();
 
 
     });
-
     // add event listener on the logout button
     function facebookLogin()
     {
@@ -32,17 +29,17 @@ $(document).ready(function(){
             facebookLoginByDialog();
         }
     }
-
     function fetchUserProfile()
     {
         console.log('Welcome!  Fetching your information.... ');
         FB.api('/me?fields=id,name,email,gender,birthday', function(response) {
             console.log('Successful login for: ' + response.name);
             let profile = `<span>${response.name}</span>`;
+            let inputName = document.getElementsByClassName('name-input')[0];
             $("#status").append(profile);
+            inputName.style.display='none';
         });
     }
-
     function facebookLoginByDialog()
     {
         FB.login(function(response) {
@@ -51,15 +48,4 @@ $(document).ready(function(){
 
         }, {scope: 'public_profile,email'});
     }
-
-    // logging out the user from Facebook
-
-    function facebookLogout()
-    {
-        FB.logout(function(response) {
-            statusChangeCallback(response);
-        });
-    }
-
-
 });
