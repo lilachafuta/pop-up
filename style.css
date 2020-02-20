@@ -150,6 +150,10 @@ form.filing-content{
     font-size: 10px;
     color: #16296f;
     box-sizing: border-box;
+    text-align: center;
+}
+.rating:first-child > label:after {
+    left: 1px;
 }
 .rating > label {
     color: #ddd;
