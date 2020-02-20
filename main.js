@@ -1,11 +1,11 @@
 window.onload=function(){
-    let modal = document.getElementsByClassName("popup")[0];
+    let modal = document.getElementsByClassName("overlay")[0];
     let trigger = document.getElementsByClassName("trigger")[0];
     let closeButton = document.getElementsByClassName("close-button")[0];
     let exitButton = document.getElementsByClassName("exit-button")[0];
 
     function toggleModal() {
-        modal.classList.toggle("show-popup");
+        modal.classList.toggle("show-overlay");
     }
 
     function windowOnClick(event) {
